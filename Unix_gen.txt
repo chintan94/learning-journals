@@ -1,0 +1,29 @@
+Change the title of a terminal 
+wmctrl -r :ACTIVE: -N "Local instnce"
+
+shebang/Hashbang
+#!/bin/sh/
+It is same as
+/bin/sh <filename>
+
+To know the current shell
+echo $0 
+
+Do not use ./init.sh for any shell script 
+Use source init.sh 
+
+rsync to sync changes
+rsync -az ../garden remote-name.google.com:/some/a/b/c
+
+To get information about a URL
+nslookup  url 
+
+undo in vim 
+u
+
+To see the stdout on file and terminal
+ls | tee output.txt 
+
+Se live log
+tail -f /local/apps/logs/some.log | grep 2013124121
+less /local/apps/logs/some.log | grep 208896346 | grep -c To_Count

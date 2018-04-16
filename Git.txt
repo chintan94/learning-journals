@@ -1,0 +1,35 @@
+Git resetting a file to the version in HEAD
+git checkout HEAD <filename>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Git cherry-pick sequence 
+git checkout <branch-name>
+If a normal commit
+  git cherry-pick <commit-hash> 
+For a merge commit
+  git cherry-pick -m 1 <commit-hash>
+git push 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Git branch-push 
+git pull origin master 
+git checkout -b <branch-name>
+git commit
+git push -u origin <branch-name>
+Then go to stash and log a pull-request
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Git Tagging 
+To automatically attach it with the last commit
+git tag <tag-name>
+To attach it to specific commit
+git tag <tag-name> <commit-hash>
+git push origin <tag-name>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cherry-pick only specific files 
+git cherry-pick -n <commit> # get your patch, but don't commit (-n = --no-commit)
+git reset <file_name>                  # unstage the changes from the cherry-picked commit
+git commit                  # make the commit!
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
